@@ -1,0 +1,283 @@
+/*paleta de colores
+#124020
+#CDFBBF
+light-grey
+black
+white
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+html {
+    font-size: 62.5%;
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    padding-right: 850px;
+}
+h1 {
+    font-size: large;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align:right
+}
+h2 {
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+p{
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: medium;
+}
+a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+}
+/* menu de inicio */
+header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+header nav ul li {
+    list-style-type: none;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    align-items:center;
+    list-style: none;
+    padding: 10px;
+    margin: auto;
+    display: inline-block;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: black;
+    font-size:small;
+}
+
+header , footer {
+    background-color: lightgrey;
+}
+head {
+    background-color: lightgray;
+    padding: 10px;
+    position: fixed;
+    bottom: 50px;
+}
+/* imagenes de inicio */
+.home {
+    width: 500px;
+    height: 400px;
+}
+section div .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/* banner del home */
+.banner {
+    display: block;
+    width: 100%;
+}
+.titulo-card {
+    color: #CDFBBF;
+    text-align: center;
+    font-size:x-large;
+    margin-top: 160px;
+}
+.card-description{
+    color: white;
+    text-align: center;
+    font-size: large;
+}
+.card-content {
+    background-image: url(../assets/reducir.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 600px;
+    height: 400px;
+}
+.card-content2 {
+    background-image: url(../assets/reutilizar.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 600px;
+    height: 400px;
+}
+.card-content3 {
+    background-image: url(../assets/reciclar.jpg);
+    background-size:cover;
+    background-position: center;
+    width: 600px;
+    height: 400px;
+}
+/* texto para el banner */
+.banner-home {
+    color: #124020;
+    font-size:x-large;
+	width: 517px;
+	height: 84px;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+	font-size: 40px;
+	letter-spacing: 2px;
+	text-align: left;
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
+.banner-home2 {
+    color: #124020;
+    font-size:x-large;
+	width: 517px;
+	height: 84px;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+	font-size: 40px;
+	letter-spacing: 2px;
+	text-align: left;
+    position: absolute;
+    top: 40%;
+    left: 23%;
+}
+/* PAGINA CONTACTANOS */
+.mapa {
+    padding-top: 30px;
+    margin-bottom: 15px;
+    width: 550px;
+    height: 550px;
+}
+.info-nuevos-miembros {
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+.donaciones {
+    margin: auto;
+    background-color: white;
+    border-width: 2px;
+    border-style:solid;
+    border-color: #487A38;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.opinion1 , .opinion2 , .opinion3 {
+    display: inline-block;
+    height: 250px;
+    width: 200px;
+    margin: auto;
+    background-color: white;
+    border-width: 2px;
+    border-style:solid;
+    border-color: black;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/* PAGINA NOSOTROS */
+.integrantes {
+    display:inline-block;
+    height: 100px;
+    width: 200px;
+    margin: auto;
+    background-color: white;
+    border-width: 2px;
+    border-style:solid;
+    border-color: black;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.nosotros {
+    color: #487A38;
+    font-size: large;
+}
+/* PAGINA PROBLEMATICA */
+.reciclar{
+    display:inline-block;
+    height: 100px;
+    width: 200px;
+    margin: auto;
+    background-color: white;
+    border-width: 2px;
+    border-style:solid;
+    border-color: black;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.como-reciclar{
+    color: #487A38;
+    font-size: large;
+}
+.forma-reciclar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.forma-reciclar p{
+    display: inline-block;
+    margin-top: 100px;
+}
+.forma-reciclar div{
+    width: 48%;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.img-forma-reciclar{
+    width: 600px;
+}
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/* grid del footer */
+footer {
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    grid-template-rows: 50px 13px 10px 8px;
+    grid-template-areas: 
+    ". . ."
+    "redes email copyright"
+    ". . ."
+    ;
+}
+footer p {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    margin-right: 7px;
+}
+footer a{
+        margin-left: 7px;
+}
