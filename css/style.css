@@ -9,6 +9,7 @@ white
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    box-sizing: border-box;
 }
 form {
     display: flex;
@@ -254,12 +255,6 @@ section div .card {
 .img-forma-reciclar{
     width: 600px;
 }
-.card {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
 /* grid del footer */
 footer {
     display: grid;
@@ -280,4 +275,56 @@ footer p {
 }
 footer a{
         margin-left: 7px;
+}
+
+/* mobile */
+@media screen and (min-width: 320px) and (max-width: 767px){
+    .banner {
+        visibility: hidden;
+        width: 1px;
+        height: 1px;
+    }    
+    .banner-home{
+        visibility: hidden;
+        width: 1px;
+        height: 1px;
+    }
+    .banner-home2{
+        visibility: hidden;
+        width: 1px;
+        height: 1px;
+    }
+}
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .banner {
+        visibility: hidden;
+        width: 1px;
+        height: 1px;
+    }
+    .banner-home{
+        visibility: hidden;
+        width: 1px;
+        height: 1px;
+    }
+    .banner-home2{
+        visibility: hidden;
+        width: 1px;
+        height: 1px;
+    }
+}
+.column img{
+    width: 100%;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    padding: 5px;
+    padding-top: 5px;
+}
+.column{
+    flex: 25%;
+    padding: 5px;
+    padding-top: 5px;
 }
