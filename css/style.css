@@ -9,7 +9,6 @@ white
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    box-sizing: border-box;
 }
 form {
     display: flex;
@@ -105,7 +104,7 @@ section div .card {
     color: #CDFBBF;
     text-align: center;
     font-size:x-large;
-    margin-top: 160px;
+    margin-top: 1.6em;
 }
 .card-description{
     color: white;
@@ -116,22 +115,22 @@ section div .card {
     background-image: url(../assets/reducir.jpg);
     background-size: cover;
     background-position: center;
-    width: 600px;
-    height: 400px;
+    width: 60rem;
+    height: 40rem;
 }
 .card-content2 {
     background-image: url(../assets/reutilizar.jpg);
     background-size: cover;
     background-position: center;
-    width: 600px;
-    height: 400px;
+    width: 60rem;
+    height: 40rem;
 }
 .card-content3 {
     background-image: url(../assets/reciclar.jpg);
     background-size:cover;
     background-position: center;
-    width: 600px;
-    height: 400px;
+    width: 60rem;
+    height: 40rem;
 }
 /* texto para el banner */
 .banner-home {
@@ -163,6 +162,21 @@ section div .card {
     position: absolute;
     top: 40%;
     left: 23%;
+}
+/* PAGINA INSTITUCION */
+.column img{
+    width: 100%;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5px;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+.column{
+    flex: 25%;
+    padding: 5px;
 }
 /* PAGINA CONTACTANOS */
 .mapa {
@@ -277,6 +291,16 @@ footer a{
         margin-left: 7px;
 }
 
+/* desktop */
+@media screen and (min-width: 1024px) {
+    .card{
+        display: flex;
+        flex-direction: row;
+    }
+    .titulo-card{
+        margin-top: 150px;
+    }
+}
 /* mobile */
 @media screen and (min-width: 320px) and (max-width: 767px){
     .banner {
@@ -293,6 +317,13 @@ footer a{
         visibility: hidden;
         width: 1px;
         height: 1px;
+    }
+    .column{
+        width: 50%;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
     }
 }
 /* tablet */
@@ -312,19 +343,7 @@ footer a{
         width: 1px;
         height: 1px;
     }
-}
-.column img{
-    width: 100%;
-}
-.row{
-    display: flex;
-    flex-direction: row;
-    margin-top: 5px;
-    padding: 5px;
-    padding-top: 5px;
-}
-.column{
-    flex: 25%;
-    padding: 5px;
-    padding-top: 5px;
+    .column{
+        width: 50%;
+    }
 }
