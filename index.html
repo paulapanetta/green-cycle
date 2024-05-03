@@ -17,12 +17,19 @@
         <a href="./index.html"><img src="./assets/logo-icon.png" alt="logo"></a>
         <h1><b>Green Cycle</b></h1>
         </section>
-        <form>
-        <label for="search"></label>
-        <input type="search" name="search" id="search" placeholder="Buscar">
-        </form>
                 <!-- menu de inicio -->
-                <ul>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Menu
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                    <li><button class="dropdown-item" type="button">Contactanos</button></li>
+                    <li><button class="dropdown-item" type="button">Institucion</button></li>
+                    <li><button class="dropdown-item" type="button">Nosotros</button></li>
+                    <li><button class="dropdown-item" type="button">Problematica</button></li>
+                    </ul>
+                </div>
+                <ul class="menu-desktop">
                     <li><a href="./pages/institucion.html">Institucion</a></li>
                     <li><a href="./pages/problematica.html">Problematica</a></li>
                     <li><a href="./pages/nosotros.html">Nosotros</a></li>

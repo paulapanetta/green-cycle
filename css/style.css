@@ -19,19 +19,18 @@ form {
 html {
     font-size: 62.5%;
 }
-.logo{
+/* .logo{
     display: flex;
     flex-direction: row;
     justify-content: left;
     align-items: center;
     padding-right: 850px;
-}
+} */
 h1 {
     font-size: large;
     font-family: "Alata", sans-serif;
     font-weight: 400;
     font-style: normal;
-    text-align:right
 }
 h2 {
     font-family: "Alata", sans-serif;
@@ -166,17 +165,19 @@ section div .card {
 /* PAGINA INSTITUCION */
 .column img{
     width: 100%;
+    margin-top: 6px;
 }
 .row{
     display: flex;
     flex-direction: row;
-    margin-top: 5px;
-    padding: 5px;
+    padding: 4px;
     flex-wrap: wrap;
+    background-color:#CDFBBF
 }
 .column{
     flex: 25%;
-    padding: 5px;
+    padding: 4px;
+    background-color: #CDFBBF;
 }
 /* PAGINA CONTACTANOS */
 .mapa {
@@ -300,6 +301,11 @@ footer a{
     .titulo-card{
         margin-top: 150px;
     }
+    .btn-group{
+        visibility: hidden;
+        width: 1px;
+        height: 1px;
+    }
 }
 /* mobile */
 @media screen and (min-width: 320px) and (max-width: 767px){
@@ -325,6 +331,26 @@ footer a{
         display: flex;
         flex-direction: column;
     }
+    .menu-desktop{
+        visibility: hidden;
+        width: 1px;
+        height: 1px;
+    }
+    .footer{
+        width: 100%;
+    }
+    .card-content{
+        width: 100%;
+        align-items: center;
+    }
+    .card-content2{
+        width: 100%;
+        align-items: center;
+    }
+    .card-content3{
+        width: 100%;
+        align-items: center;
+    }
 }
 /* tablet */
 @media screen and (min-width: 768px) and (max-width: 1023px){
@@ -349,5 +375,22 @@ footer a{
     .card{
         display: flex;
         flex-direction: column;
+    }
+    .menu-desktop{
+        visibility: hidden;
+        width: 1px;
+        height: 1px;
+    }
+    .card-content{
+        width: 100%;
+        align-items: center;
+    }
+    .card-content2{
+        width: 100%;
+        align-items: center;
+    }
+    .card-content3{
+        width: 100%;
+        align-items: center;
     }
 }
