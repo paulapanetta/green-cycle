@@ -172,12 +172,11 @@ section div .card {
     flex-direction: row;
     padding: 4px;
     flex-wrap: wrap;
-    background-color:#CDFBBF
 }
 .column{
+    flex-wrap: wrap;
     flex: 25%;
     padding: 4px;
-    background-color: #CDFBBF;
 }
 /* PAGINA CONTACTANOS */
 .mapa {
@@ -190,7 +189,6 @@ section div .card {
     font-family: "Alata", sans-serif;
     font-weight: 400;
     font-style: normal;
-
 }
 .donaciones {
     margin: auto;
@@ -210,28 +208,37 @@ section div .card {
     background-color: white;
     border-width: 2px;
     border-style:solid;
-    border-color: black;
+    border-color: #124020;
     font-family: "Alata", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 /* PAGINA NOSOTROS */
-.integrantes {
+.col-lg-3 {
     display:inline-block;
-    height: 100px;
+    height: 250px;
     width: 200px;
     margin: auto;
-    background-color: white;
     border-width: 2px;
     border-style:solid;
     border-color: black;
     font-family: "Alata", sans-serif;
     font-weight: 400;
     font-style: normal;
+    align-items: center;
+    margin-bottom: 150px;
+    margin-top: 100px;
 }
 .nosotros {
+    margin-top: 80px;
     color: #487A38;
     font-size: large;
+}
+.icono-usuario{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* PAGINA PROBLEMATICA */
 .reciclar{
@@ -280,6 +287,7 @@ footer {
     "redes email copyright"
     ". . ."
     ;
+    margin-top: 20px;
 }
 footer p {
     display: flex;
