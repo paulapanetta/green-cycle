@@ -1,6 +1,7 @@
 /*paleta de colores
 #124020
 #CDFBBF
+#487A38
 light-grey
 black
 white
@@ -19,18 +20,16 @@ form {
 html {
     font-size: 62.5%;
 }
-/* .logo{
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
-    align-items: center;
-    padding-right: 850px;
-} */
+
 h1 {
     font-size: large;
     font-family: "Alata", sans-serif;
     font-weight: 400;
     font-style: normal;
+    text-align: center;
+    color: #487A38;
+    font-size: x-large;
+
 }
 h2 {
     font-family: "Alata", sans-serif;
@@ -51,30 +50,29 @@ a{
     flex-direction: row;
 }
 /* menu de inicio */
-header nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
 }
 header nav ul li {
-    list-style-type: none;
-    display: flex;
-    flex-direction:row;
-    justify-content: space-around;
-    align-items:center;
-    list-style: none;
-    padding: 10px;
-    margin: auto;
     display: inline-block;
+    margin-left: 20px;
     font-family: "Alata", sans-serif;
     font-weight: 400;
     font-style: normal;
     color: black;
-    font-size:small;
+    font-size: medium;
 }
-
-header , footer {
+header nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+header nav ul li a:hover {
+    color: #487A38;
+}
+footer {
     background-color: lightgrey;
 }
 head {
@@ -83,6 +81,21 @@ head {
     position: fixed;
     bottom: 50px;
 }
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; 
+}
+.logo{
+    margin-left: 25px;
+    display: flex;
+    flex-direction: row;
+    width: 65px;
+    height: 65px;
+    margin-top: 5px;
+}
+
 /* imagenes de inicio */
 .home {
     width: 500px;
@@ -144,7 +157,7 @@ section div .card {
 	letter-spacing: 2px;
 	text-align: left;
     position: absolute;
-    top: 35%;
+    top: 45%;
     left: 10%;
 }
 .banner-home2 {
@@ -159,7 +172,7 @@ section div .card {
 	letter-spacing: 2px;
 	text-align: left;
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 23%;
 }
 /* PAGINA INSTITUCION */
@@ -171,12 +184,20 @@ section div .card {
     display: flex;
     flex-direction: row;
     padding: 4px;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
 }
 .column{
     flex-wrap: wrap;
     flex: 25%;
     padding: 4px;
+}
+.explicacion-institucion{
+    text-align: center;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 /* PAGINA CONTACTANOS */
 .mapa {
@@ -189,6 +210,11 @@ section div .card {
     font-family: "Alata", sans-serif;
     font-weight: 400;
     font-style: normal;
+    margin-top: 135px;
+    font-size: medium;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .donaciones {
     margin: auto;
@@ -199,25 +225,96 @@ section div .card {
     font-family: "Alata", sans-serif;
     font-weight: 400;
     font-style: normal;
+    box-sizing:content-box;
+    width: 700px;
+    height: 150px;
+    float: right;
+    margin-right: 70px;
+    margin-bottom: 55px;
+    margin-left: 15px;
+    text-align: center;
 }
-.opinion1 , .opinion2 , .opinion3 {
+.opiniones{
+    width: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/* opiniones con burbuja de texto */
+.opiniones , .opinion1 , .opinion2 , .opinion3 {
+    width: 100%;
+    margin-bottom: 20px;
     display: inline-block;
-    height: 250px;
-    width: 200px;
     margin: auto;
-    background-color: white;
-    border-width: 2px;
-    border-style:solid;
-    border-color: #124020;
     font-family: "Alata", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
+.opiniones , .opinion1 , .opinion2 , .opinion3 p h2{
+margin: 0 0 10px 0;
+}
+.burbuja{
+    position: relative;
+    padding: 20px;
+    color: #222;
+    border-radius: 5px;
+    margin-left: 20px;
+    background-color: lightgray;
+    width: 150px;
+    height: 130px;
+    box-sizing: content-box;
+    text-align: center;
+}
+.burbuja :after{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 15px;
+    margin-left: -35px;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 15px solid lightgray;
+}
+.mapa-local {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.mapa-local p{
+    display: inline-block;
+    margin-top: 100px;
+}
+.mapa-local div{
+    width: 48%;
+    padding: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.mapa{
+    width: 600px;
+}
+.fotos-opiniones{
+    display: flex;
+    flex-direction: row;
+    float: left;
+    justify-content: space-between;
+    width: 127px;
+    height: 145px;
+    margin-left: 50px;
+}
+.foto-miembro{
+    margin-left: 90px;
+    margin-right: 90px;
+}
 /* PAGINA NOSOTROS */
 .col-lg-3 {
     display:inline-block;
-    height: 250px;
-    width: 200px;
+    height: 550px;
+    width: 300px;
     margin: auto;
     border-width: 2px;
     border-style:solid;
@@ -225,22 +322,31 @@ section div .card {
     font-family: "Alata", sans-serif;
     font-weight: 400;
     font-style: normal;
-    align-items: center;
     margin-bottom: 150px;
     margin-top: 100px;
+    border-radius: 15px;
+}
+.col-lg-3 img{
+    margin-left: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 150px;
+}
+.col-lg-3 p{
+    text-align: center;
 }
 .nosotros {
     margin-top: 80px;
     color: #487A38;
-    font-size: large;
-}
-.icono-usuario{
-    width: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size:xx-large;
 }
 /* PAGINA PROBLEMATICA */
+.titulo-problematica{
+    color:#487A38;
+    margin-top: 50px;
+    text-align: center;
+    font-size: xx-large;
+}
 .reciclar{
     display:inline-block;
     height: 100px;
@@ -265,7 +371,7 @@ section div .card {
 }
 .forma-reciclar p{
     display: inline-block;
-    margin-top: 100px;
+    margin-top: 180px;
 }
 .forma-reciclar div{
     width: 48%;
@@ -277,17 +383,25 @@ section div .card {
 .img-forma-reciclar{
     width: 600px;
 }
+.carousel-caption{
+    color: #124020;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #CDFBBF;
+}
 /* grid del footer */
 footer {
     display: grid;
     grid-template-columns: repeat(3 , 1fr);
     grid-template-rows: 50px 13px 10px 8px;
-    grid-template-areas: 
+    grid-template-areas:
     ". . ."
     "redes email copyright"
     ". . ."
     ;
     margin-top: 20px;
+    width: 100%;
 }
 footer p {
     display: flex;
@@ -302,6 +416,9 @@ footer a{
 
 /* desktop */
 @media screen and (min-width: 1024px) {
+    header nav ul li:hover{
+        background: lightgray;
+    }
     .card{
         display: flex;
         flex-direction: row;
@@ -309,7 +426,7 @@ footer a{
     .titulo-card{
         margin-top: 150px;
     }
-    .btn-group{
+    .menu-hamburguesa{
         visibility: hidden;
         width: 1px;
         height: 1px;
@@ -321,7 +438,7 @@ footer a{
         visibility: hidden;
         width: 1px;
         height: 1px;
-    }    
+    }
     .banner-home{
         visibility: hidden;
         width: 1px;
@@ -358,6 +475,20 @@ footer a{
     .card-content3{
         width: 100%;
         align-items: center;
+    }
+    .mapa-local{
+        display: flex;
+        flex-direction: column;
+    }
+    .info-nuevos-miembros{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .donaciones{
+        margin-right: 0;
+    }
+    .menu-hamburguesa :hover{
+        color: #487A38;
     }
 }
 /* tablet */
@@ -400,5 +531,19 @@ footer a{
     .card-content3{
         width: 100%;
         align-items: center;
+    }
+    .mapa-local{
+        display: flex;
+        flex-direction: column;
+    }
+    .info-nuevos-miembros{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .donaciones{
+        margin-right: 0;
+    }
+    .menu-hamburguesa :hover{
+        color: #487A38;
     }
 }

@@ -12,23 +12,29 @@
 </head>
 <body>
     <header>
-    <nav>
         <section class="logo">
-        <a href="./index.html"><img src="./assets/logo-icon.png" alt="logo"></a>
-        <h1><b>Green Cycle</b></h1>
+        <a href="./index.html"><img src="./assets/icon-ventana.png" alt="logo"></a>
+        <!-- <h1><b>Green Cycle</b></h1> -->
         </section>
                 <!-- menu de inicio -->
-                <div class="btn-group">
-                    <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                    Menu
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-end">
-                    <li><button class="dropdown-item" type="button">Contactanos</button></li>
-                    <li><button class="dropdown-item" type="button">Institucion</button></li>
-                    <li><button class="dropdown-item" type="button">Nosotros</button></li>
-                    <li><button class="dropdown-item" type="button">Problematica</button></li>
-                    </ul>
-                </div>
+                <nav>
+                <section class="menu-hamburguesa">
+                    <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="light">
+                        <div class="bg-light p-4">
+                        <p class="text-body-emphasis h4"><a href="./pages/institucion.html">Institucion</a></p>
+                        <p class="text-body-emphasis h4"><a href="./pages/problematica.html">Problematica</a></p>
+                        <p class="text-body-emphasis h4"><a href="./pages/nosotros.html">Nosotros</a></p>
+                        <p class="text-body-emphasis h4"><a href="./pages/contactanos.html">Contactanos</a></p>
+                        </div>
+                    </div>
+                    <nav class="navbar navbar-light bg-light">
+                        <div class="container-fluid">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        </div>
+                    </nav>
+                </section>
                 <ul class="menu-desktop">
                     <li><a href="./pages/institucion.html">Institucion</a></li>
                     <li><a href="./pages/problematica.html">Problematica</a></li>
@@ -37,9 +43,10 @@
                 </ul>
     </nav>
     </header>
+    <hr size="3px" color="black" />
     <div>
         <img class="banner" src="./assets/banner-home.png" alt="banner de home reciclaje"> 
-        <h2 class="banner-home"><b>Siempre es importante</b></h2>
+        <h1 class="banner-home"><b>Siempre es importante</b></h1>
         <h2 class="banner-home2"><b>cuidar el planeta!</b></h2>
     </div>
     <main>
