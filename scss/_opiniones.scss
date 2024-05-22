@@ -1,0 +1,60 @@
+.opiniones {
+    width: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+    display: inline-block;
+    margin: auto;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  /* opiniones con burbuja de texto */
+.opinion1, .opinion2, .opinion3 {
+    width: 100%;
+    margin-bottom: 20px;
+    display: inline-block;
+    margin: auto;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.opiniones, .opinion1, .opinion2, .opinion3 p h2 {
+    margin: 0 0 10px 0;
+}
+.burbuja {
+    position: relative;
+    padding: 20px;
+    color: #222;
+    border-radius: 5px;
+    margin-left: 20px;
+    background-color: lightgray;
+    width: 150px;
+    height: 130px;
+    box-sizing: content-box;
+    text-align: center;
+    :after {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 15px;
+        margin-left: -35px;
+        width: 0;
+        height: 0;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent;
+        border-right: 15px solid lightgray;
+    }
+}
+.fotos-opiniones {
+    display: flex;
+    flex-direction: row;
+    float: left;
+    justify-content: space-between;
+    width: 127px;
+    height: 145px;
+    margin-left: 50px;
+}

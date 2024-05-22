@@ -1,0 +1,38 @@
+.titulo-card {
+    color: #CDFBBF;
+    text-align: center;
+    font-size: x-large;
+    margin-top: 1.6em;
+}
+.card-description {
+    color: white;
+    text-align: center;
+    font-size: large;
+}
+.card-content {
+    background-image: url(../assets/reducir.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 60rem;
+    height: 40rem;
+}
+.card-content2 {
+    background-image: url(../assets/reutilizar.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 60rem;
+    height: 40rem;
+}
+.card-content3 {
+    background-image: url(../assets/reciclar.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 60rem;
+    height: 40rem;
+}
+section div .card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,443 @@
+/*paleta de colores
+#124020
+#CDFBBF
+#487A38
+light-grey
+black
+white
+*/
+
+@import 'header';
+@import 'opiniones';
+@import 'footer';
+@import 'card';
+@import 'banner';
+@import 'mixins';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+html {
+    font-size: 62.5%;
+}
+h1 {
+    font-size: large;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    color: #487A38;
+    font-size: x-large;
+}
+h2 {
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+p {
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: medium;
+}
+a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: row;
+}
+  /* menu de inicio */
+
+footer {
+    background-color: lightgrey;
+}
+head {
+    background-color: lightgray;
+    padding: 10px;
+    position: fixed;
+    bottom: 50px;
+}
+.logo {
+    margin-left: 25px;
+    display: flex;
+    flex-direction: row;
+    width: 65px;
+    height: 65px;
+    margin-top: 5px;
+}
+  /* imagenes de inicio */
+.home {
+    width: 500px;
+    height: 400px;
+}
+  /* PAGINA INSTITUCION */
+.column img {
+    width: 100%;
+    margin-top: 6px;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+    padding: 4px;
+    flex-wrap: wrap;
+}
+.column {
+    flex-wrap: wrap;
+    flex: 25%;
+    padding: 4px;
+}
+.explicacion-institucion {
+    text-align: center;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+  /* PAGINA CONTACTANOS */
+.mapa {
+    padding-top: 30px;
+    margin-bottom: 15px;
+    width: 550px;
+    height: 550px;
+}
+.info-nuevos-miembros {
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 135px;
+    font-size: medium;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.donaciones {
+    margin: auto;
+    background-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #487A38;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: content-box;
+    width: 700px;
+    height: 150px;
+    float: right;
+    margin-right: 70px;
+    margin-bottom: 55px;
+    margin-left: 15px;
+    text-align: center;
+}
+.mapa-local {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    p {
+        display: inline-block;
+        margin-top: 100px;
+    }
+    div {
+        width: 48%;
+        padding: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+}
+.mapa {
+    width: 600px;
+}
+.foto-miembro {
+    margin-left: 90px;
+    margin-right: 90px;
+}
+  /* PAGINA NOSOTROS */
+.col-lg-3 {
+    display: inline-block;
+    height: 550px;
+    width: 300px;
+    margin: auto;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 150px;
+    margin-top: 100px;
+    border-radius: 15px;
+        img {
+        margin-left: 70px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 150px;
+    }
+    p {
+        text-align: center;
+    }
+}
+.nosotros {
+    margin-top: 80px;
+    color: #487A38;
+    font-size: xx-large;
+}
+  /* PAGINA PROBLEMATICA */
+.titulo-problematica {
+    color: #487A38;
+    margin-top: 50px;
+    text-align: center;
+    font-size: xx-large;
+}
+.reciclar {
+    display: inline-block;
+    height: 100px;
+    width: 200px;
+    margin: auto;
+    background-color: white;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.como-reciclar {
+    color: #487A38;
+    font-size: large;
+}
+.forma-reciclar {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+        p {
+            display: inline-block;
+            margin-top: 180px;
+        }
+            div {
+                    width: 48%;
+                    padding: 80px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                }
+}
+.img-forma-reciclar {
+    width: 600px;
+    }
+.carousel-caption {
+    color: #124020;
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-color: #CDFBBF;
+    }
+  /* desktop */
+@include desktop {
+    header nav ul li:hover {
+        background: lightgray;
+    }
+    .card {
+        display: flex;
+        flex-direction: row;
+    }
+    .titulo-card {
+        margin-top: 150px;
+    }
+    .menu-hamburguesa {
+        visibility: hidden;
+        width: 1px;
+        height: 1px;
+    }
+    }
+  /* mobile */
+@include mobile {
+    .banner, .banner-home, .banner-home2 {
+        visibility: hidden;
+        width: 1px;
+        height: 1px;
+    }
+    .column {
+        width: 50%;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-desktop {
+        visibility: hidden;
+        width: 1px;
+        height: 1px;
+    }
+    .footer {
+        width: 100%;
+    }
+    .card-content, .card-content2, .card-content3 {
+        width: 100%;
+        align-items: center;
+    }
+    .mapa-local {
+        display: flex;
+        flex-direction: column;
+    }
+    .info-nuevos-miembros {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .donaciones {
+        margin-right: 0;
+    }
+    .menu-hamburguesa :hover {
+        color: #487A38;
+        float: right;
+    }
+    .col-lg-3 {
+        display: inline-block;
+        height: 200px;
+        width: 450px;
+        margin: auto;
+        border-width: 2px;
+        border-style: solid;
+        border-color: black;
+        font-family: "Alata", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-bottom: 30px;
+        margin-top: 50px;
+        border-radius: 15px;
+        box-sizing: border-box;
+            img {
+                margin-left: 5px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+                width: 150px;
+                float: left;
+            }
+                p {
+                    text-align: center;
+                    font-size: x-small;
+                    
+                }
+    }
+    .forma-reciclar {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+            p {
+                display: inline-block;
+                margin-top: 5px;
+            }
+                div {
+                        width: 48%;
+                        padding: 80px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                    }
+    }
+    .img-forma-reciclar{
+        align-items: center;
+        width: 500px;
+        margin-bottom: 5px;
+    }
+}
+  /* tablet */
+@include tablet {
+    .banner, .banner-home, .banner-home2 {
+        visibility: hidden;
+        width: 1px;
+        height: 1px;
+    }
+    .column {
+        width: 50%;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+    }
+    .menu-desktop {
+        visibility: hidden;
+        width: 1px;
+        height: 1px;
+    }
+    .card-content, .card-content2, .card-content3 {
+        width: 100%;
+        align-items: center;
+    }
+    .mapa-local {
+        display: flex;
+        flex-direction: column;
+    }
+    .info-nuevos-miembros {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .donaciones {
+        margin-right: 0;
+    }
+    .menu-hamburguesa :hover {
+        color: #487A38;
+    }
+    .menu-hamburguesa{
+        float: right;
+    }
+    .col-lg-3 {
+        display: inline-block;
+        height: 300px;
+        width: 700px;
+        margin: auto;
+        border-width: 2px;
+        border-style: solid;
+        border-color: black;
+        font-family: "Alata", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-bottom: 30px;
+        margin-top: 50px;
+        border-radius: 15px;
+        box-sizing: border-box;
+            img {
+                margin-left: 5px;
+                margin-top: 60px;
+                margin-bottom: 10px;
+                margin-right: 10px;
+                width: 150px;
+                float: left;
+            }
+                p {
+                    text-align: center;
+                    margin-top: 30px;
+                    
+                }
+    }
+    .forma-reciclar {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+            p {
+                display: inline-block;
+                margin-top: 5px;
+            }
+                div {
+                        width: 48%;
+                        padding: 80px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                    }
+    }
+    .img-forma-reciclar{
+        align-items: center;
+        width: 600px;
+        margin-bottom: 5px;
+        margin-left: 125px;
+    }
+    }
