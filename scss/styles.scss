@@ -54,11 +54,6 @@ a {
     display: flex;
     flex-direction: row;
 }
-  /* menu de inicio */
-
-footer {
-    background-color: lightgrey;
-}
 head {
     background-color: lightgray;
     padding: 10px;
@@ -73,12 +68,10 @@ head {
     height: 65px;
     margin-top: 5px;
 }
-  /* imagenes de inicio */
 .home {
     width: 500px;
     height: 400px;
 }
-  /* PAGINA INSTITUCION */
 .column img {
     width: 100%;
     margin-top: 6px;
@@ -99,10 +92,9 @@ head {
     font-family: "Alata", sans-serif;
     font-weight: 400;
     font-style: normal;
-    margin-left: 5px;
-    margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
-  /* PAGINA CONTACTANOS */
 .mapa {
     padding-top: 30px;
     margin-bottom: 15px;
@@ -117,7 +109,7 @@ head {
     font-size: medium;
     text-align: center;
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 .donaciones {
     margin: auto;
@@ -190,7 +182,6 @@ head {
     color: #487A38;
     font-size: xx-large;
 }
-  /* PAGINA PROBLEMATICA */
 .titulo-problematica {
     color: #487A38;
     margin-top: 50px;
@@ -221,6 +212,7 @@ head {
         p {
             display: inline-block;
             margin-top: 180px;
+            margin-right: 15px;
         }
             div {
                     width: 48%;
@@ -240,7 +232,6 @@ head {
     font-style: normal;
     background-color: #CDFBBF;
     }
-  /* desktop */
 @include desktop {
     header nav ul li:hover {
         background: lightgray;
@@ -258,7 +249,6 @@ head {
         height: 1px;
     }
     }
-  /* mobile */
 @include mobile {
     .banner, .banner-home, .banner-home2 {
         visibility: hidden;
@@ -294,6 +284,8 @@ head {
     }
     .donaciones {
         margin-right: 0;
+        width:450px ;
+        align-items: center;
     }
     .menu-hamburguesa :hover {
         color: #487A38;
@@ -334,6 +326,9 @@ head {
             p {
                 display: inline-block;
                 margin-top: 5px;
+                text-align: center;
+                margin-left: 5px;
+                margin-right: 5px;
             }
                 div {
                         width: 48%;
@@ -345,11 +340,47 @@ head {
     }
     .img-forma-reciclar{
         align-items: center;
-        width: 500px;
+        width: 400px;
         margin-bottom: 5px;
+        margin-right: 500px;
+        margin-left: 5px;
+    }
+    .fotos-opiniones {
+        visibility: hidden;
+    }
+    .opinion1, .opinion2, .opinion3 {
+        width: 100%;
+        margin-bottom: 20px;
+        display: inline-block;
+        margin: auto;
+        font-family: "Alata", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    .opiniones, .opinion1, .opinion2, .opinion3 p h2 {
+        margin: 0 0 10px 0;
+    }
+    .burbuja {
+        position: relative;
+        padding: 20px;
+        color: #222;
+        border-radius: 5px;
+        margin-left: 5px;
+        background-color: lightgray;
+        width: 150px;
+        height: 130px;
+        box-sizing: content-box;
+        text-align: center;
+        margin-left: 250px;
+        :after {
+            visibility: hidden;
+        }
+    }
+    .mapa{
+        width: 475px;
+        align-items: center;
     }
 }
-  /* tablet */
 @include tablet {
     .banner, .banner-home, .banner-home2 {
         visibility: hidden;
@@ -425,6 +456,9 @@ head {
             p {
                 display: inline-block;
                 margin-top: 5px;
+                text-align: center;
+                margin-left: 5px;
+                margin-right: 5px;
             }
                 div {
                         width: 48%;
@@ -438,6 +472,13 @@ head {
         align-items: center;
         width: 600px;
         margin-bottom: 5px;
-        margin-left: 125px;
+        margin-right: 500px;
+        margin-left: 5px;
     }
+.fotos-opiniones{
+    visibility: hidden;
+}
+.mapa{
+    align-items: center;
+}
     }
